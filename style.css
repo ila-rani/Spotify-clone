@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    .varela-round-regular {
+        font-family: "Varela Round", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      }
+      nav ul, nav a{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height: 65px;
+        background-color: black;
+        color: white;
+      }
+      nav a{
+        text-decoration: none;
+      }
+      nav ul li{
+        padding: 0 12px ;
+      }
+      .brand img{
+        width:50px;
+        padding: 0 8px;
+
+      }
+      .brand{
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 1.3rem;
+      }
+      .container{
+        min-height: 75vh;
+        background-color: black;
+        color: white;
+        font-family: "Varela Round", serif;
+        display: flex;
+        width: 75%;
+        margin:23px auto;
+        border-radius: 13px;
+        background-image: url("../covers/bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .bottom{
+        position: sticky;
+        height: 130px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    
+        }
+    .icons{
+        margin-top: 12px;
+    }
+    .icons i{
+        cursor: pointer;
+    }
+    .songItems{
+        height: 50px;
+        display: flex;
+        background-color: white;
+        color: black;
+        margin: 5px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+        
+    }
+    .songItems img{
+        width: 43px;
+        margin: 0 50px;
+        border-radius:34px
+    }
+    .timestamp{
+        margin:0 23px;
+        cursor: pointer;
+    }
+    .songInfo{
+        position: absolute;
+        left: 10vw;
+        font-family:  "Varela Round", serif;
+    }
+    .songInfo img{
+        opacity: 0;
+        transition: opacity 0.4s ease-in;
+    }
+    #myProgressBar{
+        width: 80vw;
+        cursor: pointer;
+    }
+    .home {
+      text-align: center;
+      padding: 20px;
+  }
+  
+  .hero h1 {
+      font-size: 2.5em;
+      color: #1DB954;
+  }
+  
+  .hero input {
+      width: 50%;
+      padding: 10px;
+      margin: 10px 0;
+  }
+  
+  .featured-playlist {
+      margin-top: 20px;
+     
+  }
+  
+  
+  .playlist-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .playlist-card {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+      text-align: center;
+      width: 200px;
+      margin-bottom: 0;
+      gap: 10px;
+      
+  }
+  
+  .playlist-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0px;
+      height: auto;
+  }
+  .playlist-card a{
+    background:none;
+    color: #000;
+  }
+    .playlist-card h3{
+      margin: 0;
+      margin-top: 0;
+    }
+
+  
+  
+  .subscribe {
+    text-align: center;
+    padding: 20px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 40%;
+}
+
+.subscribe-form button {
+    padding: 10px;
+    background-color: #1d78b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1DB954;
+    color: white;
+}
+.team img{
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+}  
+.hidden-playlists {
+  display: none;
+  margin-top: 10px;
+}
+.hidden-about {
+  display: none;
+  margin-top: 10px;
+}
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.popup-form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.hidden-playlists {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Add space between items */
+  margin-top: 10px;
+}
+.chatbot {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.chatbot input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.chatbot button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.chatbot p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+/* Playlist section styles */
+#featured {
+  padding: 20px;
+  text-align: center;
+}
+
+.playlist-container {
+  margin-bottom: 40px;
+}
+
+.playlist-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1DB954;
+}
+
+.song-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.song-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.song-name {
+  font-size: 1.1rem;
+  margin-right: 20px;
+}
+
+.song-duration {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Optional footer styles */
+footer {
+  background-color: #1DB954;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.song-item{
+  cursor: pointer;
+  transition: transform 0.6s ease;
+}
+.song-item:hover {
+  transform: scale(0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.song-item img {
+  transition: transform 0.5s ease;
+}
+
+.song-item:hover img {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .playlist-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .playlist-card {
+      width: 100%;
+      max-width: 300px;
+  }
+}
+footer {
+  background-color: #1DB954;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1.5s ease-in;
+}
+.highlight {
+  background-color: #f0f8ff; /* Light blue background */
+  border: 2px solid #4CAF50; /* Green border */
+}
+
+
