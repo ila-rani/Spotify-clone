@@ -49,7 +49,7 @@ nav{
         width: 75%;
         margin:23px auto;
         border-radius: 13px;
-        background-image: url("../covers/bg.jpg");
+        background-image: url("bg.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
