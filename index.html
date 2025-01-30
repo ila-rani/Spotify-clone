@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li class ="brand"><img src="../logo.png" alt="spotify">Spotify</spotify></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+        </ul><section class="home" id="home">
+            <div class="hero">
+                <h1>Discover & Listen to Your Favorite Music</h1>
+                <p>Millions of songs, playlists, and more. Start exploring now!</p>
+                <!-- <input type="text" id="searchInput" placeholder="Search for a song..." oninput="searchSongs()" />
+                <i class="fa fa-search" id="searchIcon"></i> -->
+                <form action="javascript:void(0);" class="search-from" onsubmit="redirectToSlider()">
+                    <input type="text" id="searchInput" placeholder="Enter the song" />
+                    <button type="submit" id="search" class="fas fa-search"></button>
+                </form>
+    
+
+            <div id="song-list"></div> 
+            </div>
+            <div class="chatbot">
+                <h2>Ask Me Anything About Music 🎵</h2>
+                <input type="text" id="chatInput" placeholder="Ask me about a song..." />
+                <button onclick="askMusicBot()">Ask</button>
+                <p id="chatResponse"></p>
+            </div>
+            
+            
+            <div class="featured-playlist" id="featured">
+                <h2>Featured Playlists</h2>
+                <div class="playlist-container">
+                    <div class="playlist-card">
+                        <img src="../covers/1.jpg" alt="Playlist Cover">
+                        <h3><a href="Top.html">Top 10 Bollywood Hits</a></h3>
+                    </div>
+                    <div class="playlist-card">
+                        <img src="../covers/2.jpg" alt="Playlist Cover">
+                        <h3><a href="Top.html">Amazing Chill & Relax</a></h3>
+                    </div>
+                    <div class="playlist-card">
+                        <img src="../covers/3.jpg" alt="Playlist Cover">
+                        <h3><a href="Top.html">Workout Energy to BoostUp</a></h3>
+                    </div>
+                </div>
+                
+                <button id="viewMoreBtn">View More</button>
+
+<div class="hidden-playlists" id="hiddenPlaylists" style="display: none;">
+    <div class="playlist-card">
+        <img src="../covers/4.jpg" alt="Playlist Cover">
+        <h3><a href="Top.html">Road Trip Vibes</a></h3>
+    </div>
+    <div class="playlist-card">
+        <img src="../covers/5.jpg" alt="Playlist Cover">
+        <h3><a href="Top.html">Romantic Melodies</a></h3>
+    </div>
+    <div class="playlist-card">
+        <img src="../covers/6.jpg" alt="Playlist Cover">
+        <h3><a href="Top.html">Party Mix</a></h3>
+    </div>
+</div>
+
+        </section>
+        
+        
+    </nav>
+    <div class="container">
+        <section class="about">
+
+        
+        
+        
+        <div class="SongList">
+          <h1>Best of Ncs - No Copyrights Sounds</h1>
+         <div>
+             <div class="songItems">
+                 <img src="../covers/10.jpg" alt="1">
+                 <span class="songName" id="ishq">ishq bulava</span>
+                 <span class="songListplay"><span class="timestamp">05:34<i  id="0" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+             </div>
+             <div class="songItems">
+                <img src="../covers/9.jpg" alt="1">
+                <span  class="songName" id="salam">salam e ishq</span>
+                <span class="songListplay"><span class="timestamp">05:34<i  id="1" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="../covers/8.jpg" alt="1">
+                <span  class="songName" id="bang">bang bang</span>
+                <span class="songListplay"><span class="timestamp">05:34<i  id="2" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="../covers/7.jpg" alt="1">
+                <span  class="songName" id="channa">channa mereya</span>
+                <span class="songListplay"><span class="timestamp">05:34<i  id="3" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="../covers/6.jpg" alt="1">
+                <span  class="songName" id="soneyo">soneyo</span>
+                <span class="songListplay"><span class="timestamp">05:34<i  id="4" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="../covers/5.jpg" alt="1">
+                <span  class="songName" id="baarish">baarish</span>
+                <span class="songListplay"><span class="timestamp">05:34<i  id="5" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="../covers/4.jpg" alt="1">
+                <span  class="songName" id="Let">Let me love you</span>
+                <span class="songListplay"><span class="timestamp">05:34<i  id="6" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="../covers/3.jpg" alt="1">
+                <span  class="songName" id="gulabo">gulabo</span>
+                <span class="songListplay"><span class="timestamp">05:34<i id="7" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="../covers/2.jpg" alt="1">
+                <span  class="songName" id="ishq">ishq</span>
+                <span class="songListplay"><span class="timestamp">05:34<i  id="8" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="../covers/1.jpg" alt="1">
+                <span  class="songName" id="huzoor">huzoor</span>
+                <span class="songListplay"><span class="timestamp">05:34<i  id="9" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+     </div>
+        <div class="SongBanner"></div>
+</div>
+    <div class="bottom">
+       <input type="range" class="range" id="myProgressBar" min="0"value="0" max="100">
+        <div class="icons">
+            <!--fontawesome icons website-->
+            <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-3x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-3x  fa-forward-step" id="next"></i>
+
+        </div>
+        <div class="songInfo">
+            <img src="../playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName"> ishq bulava</span>
+        </div>
+</div>
+<script>
+    function redirectToSlider() {
+        const searchInput = document.getElementById('searchInput').value.toLowerCase().trim();
+        const validFlowerIds = [
+            'ishq', 'salam', 'bang','channa','soneyo','baarish','Let','gulabo','ishq','huzoor'
+        ];
+    
+        const formattedInput = searchInput.replace(/\s+/g, ' ').toLowerCase();
+        if (validFlowerIds.includes(formattedInput)) {
+            const targetUrl = './Top.html#${formattedInput}';
+            window.location.href = targetUrl;
+        } else {
+            alert('Flower not found! Please enter a valid flower name.');
+        }
+    }
+</script>
+<script src="https://kit.fontawesome.com/e0eb32346d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("viewMoreBtn").addEventListener("click", function () {
+            let hiddenPlaylists = document.getElementById("hiddenPlaylists");
+    
+            if (hiddenPlaylists.style.display === "none" || hiddenPlaylists.style.display === "") {
+                hiddenPlaylists.style.display = "flex"; // Change to "flex" to maintain layout
+                this.textContent = "View Less"; // Change button text
+            } else {
+                hiddenPlaylists.style.display = "none";
+                this.textContent = "View More";
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>
